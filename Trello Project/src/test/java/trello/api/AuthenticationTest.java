@@ -26,6 +26,6 @@ public class AuthenticationTest extends BaseTestSetup {
         assertEquals(statusCode, SC_OK, format("Incorrect status code. Expected %s.", SC_OK));
         assertEquals(response.getBody().jsonPath().getString("fullName"), FULL_NAME, "Full names don't match.");
 
-        System.out.println("Authentication works!");
+        System.out.println("Successful authentication.");
     }
 }

@@ -1,24 +1,21 @@
 package base;
 
-import java.time.Instant;
-import java.time.format.DateTimeFormatter;
-
-import org.apache.commons.lang3.RandomStringUtils;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
-
 import io.restassured.RestAssured;
 import io.restassured.config.EncoderConfig;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import org.apache.commons.lang3.RandomStringUtils;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+
+import java.time.Instant;
+import java.time.format.DateTimeFormatter;
 
 import static com.telerikacademy.api.tests.Constants.KEY;
 import static com.telerikacademy.api.tests.Constants.TOKEN;
 import static com.telerikacademy.api.tests.Endpoints.BASE_URL;
 import static com.telerikacademy.api.tests.Endpoints.BOARD_ENDPOINT;
-import static io.restassured.RestAssured.basePath;
-import static io.restassured.RestAssured.baseURI;
-import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.*;
 import static java.lang.String.format;
 import static java.util.Objects.isNull;
 import static org.apache.http.HttpStatus.SC_NOT_FOUND;
@@ -46,10 +43,6 @@ public class BaseTestSetup {
         uniqueName = RandomStringUtils.randomAlphabetic(10);
     }
 
-    /**
-     * Provided configuration resolve REST Assured issue with a POST request without request body.
-     * Missing configuration leads to response status code 415 (Unsupported Media Type)
-     */
     @BeforeSuite
     public void setup() {
 
