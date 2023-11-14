@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="RESTAssured-Homework-Solution" />
+        <module name="RESTAssured-Skeleton" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="RESTAssured-Homework-Solution" target="11" />
+      <module name="RESTAssured-Skeleton" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
