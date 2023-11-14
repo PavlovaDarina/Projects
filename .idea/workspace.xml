@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e0b6605-2e30-47dc-9743-e423f2de6d50" name="Changes" comment="Adding gitignore">
-      <change beforePath="$PROJECT_DIR$/Trello Project/src/main/java/com/telerikacademy/api/tests/Endpoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello Project/src/main/java/com/telerikacademy/api/tests/Endpoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello Project/src/test/java/base/BaseTestSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello Project/src/test/java/base/BaseTestSetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello Project/src/test/java/trello/api/AuthenticationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello Project/src/test/java/trello/api/AuthenticationTest.java" afterDir="false" />
+    <list default="true" id="9e0b6605-2e30-47dc-9743-e423f2de6d50" name="Changes" comment="Refactoring">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello Project/src/test/java/trello/api/CardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello Project/src/test/java/trello/api/CardTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,13 +54,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699180828955</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Refactoring">
+      <created>1699988028530</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699988028530</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Adding gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding gitignore" />
+    <MESSAGE value="Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
   </component>
 </project>

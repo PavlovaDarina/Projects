@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.time.Instant;
+import java.util.HashMap;
 import java.util.Map;
 
 import static com.telerikacademy.api.tests.Constants.*;
@@ -97,7 +98,7 @@ public class CardTest extends BaseTestSetup {
         }
 
         basePath = CARD_ENDPOINT;
-        String color = "lime";
+        String color = "black";
 
         String coverColor = format("{\n" +
             "    \"cover\": {\n" +
@@ -115,7 +116,7 @@ public class CardTest extends BaseTestSetup {
         int statusCode = response.getStatusCode();
         assertEquals(statusCode, SC_OK, format("Incorrect status code. Expected %s.", SC_OK));
 
-        Map<String, String> cover = response.getBody().jsonPath().get("cover");
+        HashMap<String, String> cover = response.getBody().jsonPath().get("cover");
         String actualColor = cover.get("color");
         assertEquals(actualColor, color, "Card cover colors don't match.");
 
