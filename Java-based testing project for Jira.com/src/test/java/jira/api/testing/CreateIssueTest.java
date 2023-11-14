@@ -22,7 +22,7 @@ public class CreateIssueTest extends BaseTestSetup {
 
         baseURI = format("%s%s", BASE_URL, ISSUE_ENDPOINT);
 
-        String requestBody = (format(ISSUE, PROJECT_KEY, STORY_SUMMARY, STORY_MULTILINE_DESCRIPTION, STORY_NAME));
+        String requestBody = (format(ISSUE, PROJECT_KEY, STORY_SUMMARY, STORY_NAME));
         assertTrue(isValid(requestBody), "Body is not a valid JSON");
 
         Response response = getApplicationJSONSpecification()
